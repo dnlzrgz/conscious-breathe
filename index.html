@@ -7,22 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conscious Breathe</title>
   <link href="./output.css" rel="stylesheet">
+
+</html>
+<link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 
 <body class="h-screen bg-chill-100">
-  <header class="text-center text-chill-900 p-4">
-    <h1 class="text-2xl font-light">Conscious Breathe</h1>
+  <header class="text-center text-chill-50 bg-chill-700 p-5">
+    <h1 class="text-lg">Conscious Breathe</h1>
   </header>
 
   <main id="app" class="max-w-md mx-auto">
-    <div class="w-full h-32 flex items-center justify-center mb-8">
-      <p id="step" class="uppercase text-6xl font-light text-center text-chill-900">
+    <div class="w-full h-44 flex items-center justify-center">
+      <p id="step" class="uppercase text-6xl text-center text-chill-700">
         Idle
       </p>
     </div>
 
-    <form class="text-chill-900 font-light flex flex-col gap-y-4 mb-8 accent-chill-500 px-3 sm:px-0">
-      <div class="flex flex-col gap-y-1.5">
+    <form class="text-chill-700 text-lg flex flex-col gap-y-5 mb-5 accent-chill-500 px-5 sm:px-0">
+      <div class="flex flex-col gap-y-2.5">
         <label for="inhale" class="flex justify-between select-none">
           <span>Inhale</span>
           <span id="inhaleValue">5s</span>
@@ -31,7 +34,7 @@
           class="w-full h-1 bg-chill-200 rounded-lg appearance-none cursor-pointer range-sm disabled:opacity-35 disabled:cursor-not-allowed">
       </div>
 
-      <div class="flex flex-col gap-y-1.5">
+      <div class="flex flex-col gap-y-2.5">
         <label for="hold1" class="flex justify-between select-none">
           <span>Hold</span>
           <span id="hold1Value">5s</span>
@@ -40,7 +43,7 @@
           class="w-full h-1 bg-chill-200 rounded-lg appearance-none cursor-pointer range-sm disabled:opacity-35 disabled:cursor-not-allowed">
       </div>
 
-      <div class="flex flex-col gap-y-1.5">
+      <div class="flex flex-col gap-y-2.5">
         <label for="exhale" class="flex justify-between select-none">
           <span>Exhale</span>
           <span id="exhaleValue">5s</span>
@@ -49,7 +52,7 @@
           class="w-full h-1 bg-chill-200 rounded-lg appearance-none cursor-pointer range-sm disabled:opacity-35 disabled:cursor-not-allowed">
       </div>
 
-      <div class="flex flex-col gap-y-1.5">
+      <div class="flex flex-col gap-y-2.5">
         <label for="hold2" class="flex justify-between select-none">
           <span>Hold</span>
           <span id="hold2Value">5s</span>
@@ -58,12 +61,13 @@
           class="w-full h-1 bg-chill-200 rounded-lg appearance-none cursor-pointer range-sm disabled:opacity-35 disabled:cursor-not-allowed">
       </div>
 
-      <p id="info" class="bg-chill-50 flex flex-col items-center p-4 rounded-lg drop-shadow-md shadow-chill-400">
+      <p id="info"
+        class="bg-chill-50 text-center py-6 flex flex-col rounded-lg drop-shadow-sm shadow-chill-100 border-chill-100">
         <span>5 breathing cycles</span>
         <span class="font-bold">1m 40s</span>
       </p>
 
-      <div class="flex flex-col gap-y-1.5">
+      <div class="flex flex-col gap-y-2.5">
         <label id="cyclesLabel" for="cycles" class="select-none">
           Cycles
         </label>
@@ -71,11 +75,11 @@
           class="w-full h-1 bg-chill-200 rounded-lg appearance-none cursor-pointer range-sm disabled:opacity-35 disabled:cursor-not-allowed">
       </div>
     </form>
-    <button type="button" id="start"
-      class="w-full bg-chill-900 text-chill-50 p-4 rounded-full uppercase cursor-pointer hover:bg-chill-500 disabled:hover:bg-chill-900 disabled:opacity-35 disabled:cursor-not-allowed transition-colors">Start</button>
+    <div class="px-5 sm:px-0 my-5">
+      <button type="button" id="start"
+        class="w-full text-lg bg-chill-900 text-chill-50 p-5 rounded-full cursor-pointer hover:bg-chill-500 disabled:hover:bg-chill-900 disabled:opacity-35 disabled:cursor-not-allowed transition-colors">Start</button>
+    </div>
   </main>
 
   <script type="module" src="/main.js" defer></script>
 </body>
-
-</html>
